@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"Aspect Ratio Locator (Slow)"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+
+aobscan(aspectRatioAOB,?? ?? ?? ?? ?? ?? 00 00 ?? ?? 00 00 00 01 00 00 38 04 00 00 80 07 00 00 00 00 00 00 ?? ?? ?? 00 00 00 00 00 80 D2 ?? 0??)
+registersymbol(aspectRatioAOB)
+
+aspectRatioAOB:
+
+[DISABLE]
+
+unregistersymbol(aspectRatioAOB)
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>24</ID>
+          <Description>"allowFullscreen"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>aspectRatioAOB-1C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>25</ID>
+          <Description>"aspectRatioWidth"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>aspectRatioAOB-18</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>26</ID>
+          <Description>"aspectRatioHeight"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>aspectRatioAOB-14</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>27</ID>
+          <Description>"minWidthPixel"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>aspectRatioAOB-10</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>28</ID>
+          <Description>"minHeightPixel"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>aspectRatioAOB-C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>29</ID>
+          <Description>"maxWidthPixel"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>aspectRatioAOB-8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>30</ID>
+          <Description>"maxHeightPixel"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>aspectRatioAOB-4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"aspect"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>aspectRatioAOB</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>31</ID>
+          <Description>"setWidth"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>aspectRatioAOB+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>32</ID>
+          <Description>"setHeight"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>aspectRatioAOB+8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>33</ID>
+          <Description>"pixelHeightOfCurrentScreen"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>aspectRatioAOB+10</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>34</ID>
+          <Description>"pixelWidthOfCurrentScreen"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>aspectRatioAOB+14</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <Comments>Aspect ratio AOB:
+--
+00 00 10 3F F4 01 00 00 79 03 00 00 00 01 00 00 38 04 00 00 80 07 00 00 00 00 00 00 B0 0F 25 00 00 00 00 00 80 D2 0D 1F
+--
+00 00 10 3F F4 01 00 00 79 03 00 00 00 01 00 00 38 04 00 00 80 07 00 00 00 00 00 00 B0 0F ?? 00 00 00 00 00 80 D2 0D 1F
+--
+00 00 10 3F F4 01 00 00 79 03 00 00 00 01 00 00 38 04 00 00 80 07 00 00 00 00 00 00 ?? ?? ?? 00 00 00 00 00 80 D2 0D 1F
+--
+00 00 10 3F ?? 01 00 00 ?? ?? 00 00 00 01 00 00 38 04 00 00 80 07 00 00 00 00 00 00 ?? ?? ?? 00 00 00 00 00 80 D2 0D 1F
+--
+00 00 10 3F ?? ?? 00 00 ?? ?? 00 00 00 01 00 00 38 04 00 00 80 07 00 00 00 00 00 00 ?? ?? ?? 00 00 00 00 00 80 D2 ?? ??
+--
+?? ?? ?? ?? ?? ?? 00 00 ?? ?? 00 00 00 01 00 00 38 04 00 00 80 07 00 00 00 00 00 00 ?? ?? ?? 00 00 00 00 00 80 D2 ?? 0??
+--final
+?? ?? ?? ?? ?? ?? 00 00 ?? ?? 00 00 00 01 00 00 38 04 00 00 80 07 00 00 00 00 00 00 ?? ?? ?? 00 00 00 00 00 80 D2 ?? 0??
+</Comments>
+</CheatTable>
