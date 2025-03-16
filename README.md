@@ -1,1 +1,1 @@
-# DC-Dark-Legion-Widescreen
+# DC: Dark Legion Widescreen/Landscape Guide
